@@ -10,10 +10,11 @@ $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 $sql = "SELECT * FROM Me WHERE id=?";
 $result = $conn->prepare($sql);
-$result->execute(array(2));
+$user_id = 1;
+$result->execute(array($user_id));
 $info = $result->fetch();
 
-$sql = "SELECT * FROM Projects";
+$sql = "SELECT * FROM Projects WHERE user_id=$user_id";
 $result = $conn->query($sql);
 // $result = $conn->prepare($sql);
 // $result->execute(array(1));
@@ -23,12 +24,6 @@ foreach ($result as $row) {
     array_push($tabProjects, $row);
 }
 
-// $info_projects = $result->fetch();
-
-//   echo $info['firstname'];
-//   foreach ($result as $row) {
-//     echo $row["firstname"];
-//   }
 ?>
 
 
