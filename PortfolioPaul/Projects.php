@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+require "header.php"
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
-</head>
-
-<body>
-    <div class="tout">
-        <header>
-            <div>
-                <img class="pp" src="/PortfolioPaul/img/kisspng-the-legend-of-zelda-the-minish-cap-the-legend-of-zelda-link-png-file-5a79869f03d344.7265453615179137590157.png" width="200" height="200">
-            </div>
-            <div class="NameMenu">
-                <div>Joan CHENOT</div>
-                <nav class="menu">
-                    <div class="info">menu</div>
-                    <ul class="menuContent">
-                        <li><a href="google.fr">Home</a></li>
-                        <li><a href="google.fr">My Projects</a></li>
-                        <li><a href="google.fr">About Me</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </header>
+<div class="tout">
+        
         <main>
             <section>
                 <!-- <div class="ligne1">
@@ -64,10 +41,10 @@
             <div class="bas">
                 <div class="logoSpace">
                     <a href="https://linkedin.com/" target="_blank">
-                        <img class="logo" src="/PortfolioPaul/src/bxl-linkedin.svg">
+                        <img class="logo" src="/src/bxl-linkedin.svg">
                     </a>
                     <a href="https://github.com" target="_blank">
-                        <img class="logo" src="/PortfolioPaul/src/github-mark/github-mark.svg">
+                        <img class="logo" src="/src/github-mark/github-mark.svg">
                     </a>
                 </div>
 
