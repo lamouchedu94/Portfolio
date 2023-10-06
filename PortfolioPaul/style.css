@@ -9,11 +9,15 @@ header {
     flex-direction: row;
 }
 
-.menu {
+.menuContent {
     list-style-type: none;
     margin: 0;
     margin-left: 10px;
     padding: 0;
+}
+
+.info {
+    margin-left: 10px;
 }
 
 .tout {
@@ -34,5 +38,14 @@ section {
     padding-right: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 10px;
+}
+
+.bas {
+    display: flex;
+    justify-content: center;
+    border: black 1px solid;
+    border-radius: 1rem;
+    padding-left: 10px;
     margin-top: 10px;
 }
