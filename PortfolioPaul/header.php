@@ -66,10 +66,7 @@ $numberOfUser = $numberOfUser[0];
                 <div class="option"><h4><a href="./index.php<?="?id=",$user_id?>">Home</a></h4></div>
                 <div class="option"><h4><a href="./Projects.php<?="?id=",$user_id?>">My Projects</a></h4></div>
                 <div class="option"><h4><a href="./aboutMe.php<?="?id=",$user_id?>">About Me</a></h4></div>
-                <button class="switchuser">
-                    <a href="<?="http://". $url_components["host"] . ":" . $url_components["port"] . $url_components["path"] . "?id=" . $user_id%$numberOfUser+1?>" class="switchuserbutton">Switch User</a>
-                    
-                </button>
+                <div class="option"><h4><a href="<?="http://". $url_components["host"] . ":" . $url_components["port"] . $url_components["path"] . "?id=" . $user_id%$numberOfUser+1?>" class="switchuserbutton">Switch User</a></h4></div>
                
                 <!-- <ul class="menuContent">
                     <li><a href="./index.php">Home</a></li>
