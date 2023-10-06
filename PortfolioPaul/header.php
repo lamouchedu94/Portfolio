@@ -10,7 +10,7 @@ $password = "3UhyXkth";
 
   $sql = "SELECT * FROM Me WHERE id=?";
   $result = $conn->prepare($sql);
-$result->execute(array(1));
+$result->execute(array(2));
 $info = $result->fetch();
 
 //   echo $info['firstname'];
@@ -32,19 +32,21 @@ $info = $result->fetch();
 
 <body>
     <header>
-            <div>
+            <!-- <div>
                 <img class="pp" src="/img/kisspng-the-legend-of-zelda-the-minish-cap-the-legend-of-zelda-link-png-file-5a79869f03d344.7265453615179137590157.png" width="200" height="200">
-            </div>
-            <div class="NameMenu">
-                <div><?php echo $info['firstname']?><?php echo $info['lastname']?></div><a href="tel:+"></a>
-                <nav class="menu">
-                    <div class="info">menu</div>
-                    <ul class="menuContent">
-                        <li><a href="./index.php">Home</a></li>
-                        <li><a href="./Projects.php">My Projects</a></li>
-                        <li><a href="./header.php">About Me</a></li>
-                    </ul>
-                </nav>
-            </div>
+            </div> -->
+            <div><h2> <?php echo $info['firstname'], " ";?><?php echo $info['lastname']?> </h2></div><a href="tel:+"></a>
+
+            <nav class="menu">
+                <div class="option"><h4><a href="./index.php">Home</a></h4></div>
+                <div class="option"><h4><a href="./Projects.php">My Projects</a></h4></div>
+                <div class="option"><h4><a href="./aboutMe.php">About Me</a></h4></div>
+                <!-- <ul class="menuContent">
+                    <li><a href="./index.php">Home</a></li>
+                    <li><a href="./Projects.php">My Projects</a></li>
+                    <li><a href="./header.php">About Me</a></li>
+                </ul> -->
+            </nav>
+            
 
         </header>

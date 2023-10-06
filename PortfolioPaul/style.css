@@ -2,22 +2,9 @@ header {
     display: flex; 
     justify-content: space-between;
     /* background-color: aqua; */
-}
-
-.NameMenu {
-    display: flex;
-    flex-direction: row;
-}
-
-.menuContent {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 10px;
-    padding: 0;
-}
-
-.info {
-    margin-left: 10px;
+    background-color: rgb(208, 204, 204);
+    border-radius: 1rem;
+    padding-left: 10px;
 }
 
 .tout {
@@ -51,7 +38,25 @@ header {
 }
 
 .menu {
-    text-align: right;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.option {
+    background-color: inherit;
+    margin-left: 20px;
+    height: fit-content;
+    margin-right: 20px;
+    transition: transform .2s;
+}
+
+.option a {
+    color: black;
+
+}
+
+.option:hover {
+    transform: scale(1.1);
 }
 
 .ligne1 {
