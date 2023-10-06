@@ -47,7 +47,6 @@ body {
 }
 .option {
     background-color: inherit;
-    margin-left: 20px;
     height: fit-content;
     margin-right: 20px;
     transition: transform .2s;
