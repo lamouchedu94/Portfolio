@@ -6,11 +6,11 @@ INSERT INTO Me (id, firstname, lastname, email, phone, country, address,birth_da
 
 
 
-CREATE TABLE Projects(id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, title VARCHAR(64) NOT NULL, description VARCHAR(1024), picture VARCHAR(1024), date_created DATE, date_upade DATE, enable BOOLEAN);
+CREATE TABLE Projects(id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, user_id INT NOT NULL, FOREIGN KEY (user_id) REFERENCES Me(id), title VARCHAR(64) NOT NULL, description VARCHAR(1024), picture VARCHAR(1024), date_created DATE, date_upade DATE, enable BOOLEAN);
 
-INSERT INTO Projects(title, description, date_created,date_upade, enable) VALUES ('MyWordl', 'premier projet', CURDATE(), CURDATE(), true);
+INSERT INTO Projects(title, description, date_created,date_upade, enable, user_id) VALUES ('MyWordl', 'premier projet', CURDATE(), CURDATE(), true, 2);
 
-INSERT INTO Projects(title, description, date_created,date_upade, enable) VALUES ('HyruleCastle', "C'est un jeu (un rpg) écrit en Typescript en groupe. Dans ce jeu nous pouvons combatre des monstres pour pouvoir monter plus haut dans le 'donjon'. Le tout se déroule dans l'univers de Zelda", CURDATE(), CURDATE(), true);
+INSERT INTO Projects(title, description, date_created,date_upade, enable, user_id) VALUES ('HyruleCastle', "C'est un jeu (un rpg) écrit en Typescript en groupe. Dans ce jeu nous pouvons combatre des monstres pour pouvoir monter plus haut dans le 'donjon'. Le tout se déroule dans l'univers de Zelda", CURDATE(), CURDATE(), true,2);
 
 
 CREATE TABLE Message(id INT PRIMARY KEY NOT NULL, subject VARCHAR(64), message VARCHAR(2048), from_name VARCHAR(64), from_email VARCHAR(64));
