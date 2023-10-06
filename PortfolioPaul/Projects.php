@@ -23,8 +23,8 @@ require "header.php"
                 </div> -->
                 <div class="ligne2">
                     <div class="carre">
-                        Nom Projet
-                        <p>Du texte</p>
+                        <?php echo $info_projects['title'] ?>
+                        <p><?php echo $info_projects['description'] ?></p>
                     </div>
                     <div class="carre">
                         Nom Projet

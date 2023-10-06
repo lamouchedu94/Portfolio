@@ -47,6 +47,23 @@ require "header.php"
         <img src="img/kisspng-the-legend-of-zelda-the-minish-cap-the-legend-of-zelda-link-png-file-5a79869f03d344.7265453615179137590157.png" height="200" width="200">
     </div>
 </div>
+<div>
+    <h2>Expériences</h2>
+    <ol>
+        <li>
+            <p>contenu1</p> 
+        </li>
+        <li>
+            <p>contenu2</p>
+        </li>
+    </ol>
+</div>
+<div>
+    <h2>Compétences</h2>
+    <ul>
+        <li>contenu</li>
+    </ul>
+</div>
 <?php
 require "footer.php"
 ?>

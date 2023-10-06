@@ -4,14 +4,19 @@ $username = "paul";
 $password = "3UhyXkth";
 
 // try {
-  $conn = new PDO("mysql:host=$servername;dbname=Portfolio", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$conn = new PDO("mysql:host=$servername;dbname=Portfolio", $username, $password);
+// set the PDO error mode to exception
+$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-  $sql = "SELECT * FROM Me WHERE id=?";
-  $result = $conn->prepare($sql);
+$sql = "SELECT * FROM Me WHERE id=?";
+$result = $conn->prepare($sql);
 $result->execute(array(2));
 $info = $result->fetch();
+
+$sql = "SELECT * FROM Projects WHERE id=?";
+$result = $conn->prepare($sql);
+$result->execute(array(1));
+$info_projects = $result->fetch();
 
 //   echo $info['firstname'];
 //   foreach ($result as $row) {
