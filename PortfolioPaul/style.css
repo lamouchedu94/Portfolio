@@ -1,5 +1,96 @@
 header {
+    display: flex; 
+    justify-content: space-between;
+    /* background-color: aqua; */
+    background-color: rgb(208, 204, 204);
+    border-radius: 1rem;
+    padding-left: 10px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tout {
+    display: flex;
+    flex-direction: column;
+}
+
+/* section {
     display: flex;
     justify-content: space-between;
-    background-color: aqua;
+} */
+
+.carre {
+    border: black 1px solid;
+    border-radius: 1rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.bas {
+    display: flex;
+    justify-content: center;
+    border: black 1px solid;
+    border-radius: 1rem;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.option {
+    background-color: inherit;
+    margin-left: 20px;
+    height: fit-content;
+    margin-right: 20px;
+    transition: transform .2s;
+}
+
+.option a {
+    color: black;
+
+}
+
+.option:hover {
+    transform: scale(1.1);
+}
+
+.ligne1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logoSpace {
+    display: flex;
+    width: 11%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.aboutMeHaut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mail {
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+.mail:hover {
+    transform: scale(1.02);
 }
