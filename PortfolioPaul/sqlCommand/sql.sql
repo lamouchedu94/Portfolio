@@ -10,4 +10,6 @@ CREATE TABLE Projects(id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, title VARCHAR(
 
 INSERT INTO Projects(title, description, date_created,date_upade, enable) VALUES ('MyWordl', 'premier projet', CURDATE(), CURDATE(), true);
 
+
+
 CREATE TABLE Message(id INT PRIMARY KEY NOT NULL, subject VARCHAR(64), message VARCHAR(2048), from_name VARCHAR(64), from_email VARCHAR(64));
