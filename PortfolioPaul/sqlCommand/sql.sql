@@ -14,6 +14,7 @@ INSERT INTO Projects(title, description, date_created,date_upade, enable, user_i
 
 INSERT INTO Projects(title, description, date_created,date_upade, enable, user_id) VALUES ('HyruleCastle', "Il s'agit d'un rpg écrit en Typescript. Ce projet a été réalisé à 2. Dans ce jeu dans l'univers de Zelda, nous pouvons combatre des monstres pour monter de plus en plus haut dans un donjon. Bien entendu, plus on est haut dans le donjon, plus les ennemis sont puissant. Il y a une gestion de l'inventaire ainsi qu'une gestion des niveaux.", CURDATE(), CURDATE(), true, 1);
 UPDATE Projects SET picture="./img/HyruleCastle/triforce.png" WHERE id=3;
+UPDATE Projects SET picture="./img/MyWordle/Wordle.png" WHERE id=1;
 
 
 CREATE TABLE Message(id INT PRIMARY KEY NOT NULL, subject VARCHAR(64), message VARCHAR(2048), from_name VARCHAR(64), from_email VARCHAR(64));
