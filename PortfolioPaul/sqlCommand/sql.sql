@@ -10,6 +10,7 @@ CREATE TABLE Projects(id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, title VARCHAR(
 
 INSERT INTO Projects(title, description, date_created,date_upade, enable) VALUES ('MyWordl', 'premier projet', CURDATE(), CURDATE(), true);
 
+INSERT INTO Projects(title, description, date_created,date_upade, enable) VALUES ('HyruleCastle', "C'est un jeu (un rpg) écrit en Typescript en groupe. Dans ce jeu nous pouvons combatre des monstres pour pouvoir monter plus haut dans le 'donjon'. Le tout se déroule dans l'univers de Zelda", CURDATE(), CURDATE(), true);
 
 
 CREATE TABLE Message(id INT PRIMARY KEY NOT NULL, subject VARCHAR(64), message VARCHAR(2048), from_name VARCHAR(64), from_email VARCHAR(64));
