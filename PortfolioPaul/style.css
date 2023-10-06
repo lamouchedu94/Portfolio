@@ -1,7 +1,7 @@
 header {
     display: flex; 
     justify-content: space-between;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .NameMenu {
@@ -25,10 +25,10 @@ header {
     flex-direction: column;
 }
 
-section {
+/* section {
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .carre {
     border: black 1px solid;
@@ -48,4 +48,26 @@ section {
     border-radius: 1rem;
     padding-left: 10px;
     margin-top: 10px;
+}
+
+.menu {
+    text-align: right;
+}
+
+.ligne1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+}
+
+.logoSpace {
+    display: flex;
+    width: 11%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
