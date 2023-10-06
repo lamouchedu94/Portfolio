@@ -27,9 +27,9 @@ var_dump($tabProjects) ;
 echo "\n";
 echo $tabProjects['id'];
 
-$q = $db->query("SELECT * FROM me");
-$users = $q->fetchAll(PDO::FETCH_ASSOC);
-var_dump($users);
+// $q = $db->query("SELECT * FROM me");
+// $users = $q->fetchAll(PDO::FETCH_ASSOC);
+// var_dump($users);
 
 
 
