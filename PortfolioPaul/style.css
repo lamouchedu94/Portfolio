@@ -93,3 +93,7 @@ body {
 .mail:hover {
     transform: scale(1.02);
 }
+
+.switchuserbutton {
+    color: black;
+} 
