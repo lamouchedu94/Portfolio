@@ -1,5 +1,16 @@
 header {
-    display: flex;
+    display: flex; 
     justify-content: space-between;
     background-color: aqua;
+}
+
+.NameMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
