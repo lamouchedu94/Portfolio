@@ -13,10 +13,28 @@ $result = $conn->prepare($sql);
 $result->execute(array(2));
 $info = $result->fetch();
 
-$sql = "SELECT * FROM Projects WHERE id=?";
-$result = $conn->prepare($sql);
-$result->execute(array(1));
-$info_projects = $result->fetch();
+$sql = "SELECT * FROM Projects";
+$result = $conn->query($sql);
+// $result = $conn->prepare($sql);
+// $result->execute(array(1));
+$tabProjects = [];
+
+foreach ($result as $row) {
+    array_push($tabProjects, $row);
+    
+}
+var_dump($tabProjects) ;
+echo "\n";
+echo $tabProjects['id'];
+
+$q = $db->query("SELECT * FROM me");
+$users = $q->fetchAll(PDO::FETCH_ASSOC);
+var_dump($users);
+
+
+
+
+// $info_projects = $result->fetch();
 
 //   echo $info['firstname'];
 //   foreach ($result as $row) {
