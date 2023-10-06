@@ -22,18 +22,24 @@ require "header.php"
                     </div>
                 </div> -->
                 <div class="ligne2">
-                    <div class="carre">
-                        <?php echo $info_projects['title'] ?>
-                        <p><?php echo $info_projects['description'] ?></p>
-                    </div>
-                    <div class="carre">
+                    <?php
+                        foreach ($tabProjects as $elem) { ?>
+                            <div class="carre">
+                                <?php echo $elem['title'] ?>
+                                <p><?php echo $elem['description'] ?></p>
+                            </div>
+
+                        <?php } ?>
+    
+                    
+                    <!-- <div class="carre">
                         Nom Projet
                         <p>Du texte</p>
                     </div>
                     <div class="carre">
                         Nom Projet
                         <p>Du texte</p>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </main>

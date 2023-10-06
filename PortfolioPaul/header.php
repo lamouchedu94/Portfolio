@@ -21,18 +21,7 @@ $tabProjects = [];
 
 foreach ($result as $row) {
     array_push($tabProjects, $row);
-    
 }
-var_dump($tabProjects) ;
-echo "\n";
-echo $tabProjects['id'];
-
-// $q = $db->query("SELECT * FROM me");
-// $users = $q->fetchAll(PDO::FETCH_ASSOC);
-// var_dump($users);
-
-
-
 
 // $info_projects = $result->fetch();
 
@@ -58,7 +47,7 @@ echo $tabProjects['id'];
             <!-- <div>
                 <img class="pp" src="/img/kisspng-the-legend-of-zelda-the-minish-cap-the-legend-of-zelda-link-png-file-5a79869f03d344.7265453615179137590157.png" width="200" height="200">
             </div> -->
-            <div><h2> <?php echo $info['firstname'], " ";?><?php echo $info['lastname']?> </h2></div><a href="tel:+"></a>
+            <div><h2> <?=$info['firstname'], " ", $info['lastname'];?> </h2></div><a href="tel:+"></a>
 
             <nav class="menu">
                 <div class="option"><h4><a href="./index.php">Home</a></h4></div>
