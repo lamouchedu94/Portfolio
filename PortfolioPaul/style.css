@@ -76,3 +76,18 @@ header {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+.aboutMeHaut {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mail {
+    margin-top: -10px;
+    margin-left: 25px;
+}
+
+.mail:hover {
+    transform: scale(1.02);
+}

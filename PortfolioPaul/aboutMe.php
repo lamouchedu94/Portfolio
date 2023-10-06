@@ -29,12 +29,24 @@ require "header.php"
     <div class="formBlock">
         <label for="Phone number">Phone number</label><br>
         <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Complete this field">
-        <?php echo $_GET['fname']; ?>
     </div>
-</form> -->
+</form>  -->
 
-<?php echo $_GET['lname']; ?>
 
+
+<!-- <form name="form" action="" method="get">
+  <input type="text" name="subject" id="subject" value="">
+</form>
+<?php echo $_GET['subject']; ?> -->
+
+<div class="aboutMeHaut">
+    <div class="mail">
+        <h4><?php echo $info['email'];?></h4>
+    </div>
+    <div>
+        <img src="img/kisspng-the-legend-of-zelda-the-minish-cap-the-legend-of-zelda-link-png-file-5a79869f03d344.7265453615179137590157.png" height="200" width="200">
+    </div>
+</div>
 <?php
 require "footer.php"
 ?>
