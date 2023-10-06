@@ -97,3 +97,14 @@ body {
 .switchuserbutton {
     color: black;
 } 
+
+.descriptionAndImages {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.illuPictures {
+    height: 125px; 
+    width: 175px;
+}

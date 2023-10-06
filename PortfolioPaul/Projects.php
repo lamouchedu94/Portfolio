@@ -26,7 +26,10 @@ require "header.php"
                         foreach ($tabProjects as $elem) { ?>
                             <div class="carre">
                                 <?php echo $elem['title'] ?>
-                                <p><?php echo $elem['description'] ?></p>
+                                <div class="descriptionAndImages">
+                                    <p><?php echo $elem['description'] ?></p>
+                                    <img class="illuPictures" src=<?=$elem['picture']?>>
+                                </div>
                             </div>
 
                         <?php } ?>
