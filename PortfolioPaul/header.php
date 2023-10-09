@@ -1,7 +1,13 @@
 <?php
-$servername = "localhost";
-$username = "paul";
-$password = "3UhyXkth";
+require './config.php';
+
+// Create a MySQLi connection
+
+$conn = new mysqli($DB_HOST, $DB_USERNAME, $DB_PASSWORD, $DB_DATABASE);
+// Check if the connection was successful
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
+}
 
 $actual_link = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
@@ -14,34 +20,31 @@ if ($user_id == "") {
     $user_id = 1;
 }
 
-// try {
-$conn = new PDO("mysql:host=$servername;dbname=Portfolio", $username, $password);
-// set the PDO error mode to exception
-$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-$sql = "SELECT * FROM Me WHERE id=?";
-$result = $conn->prepare($sql);
-// $user_id = 1;
-$result->execute(array($user_id));
-$info = $result->fetch();
 
+// Get specific user info
+$sql = "SELECT * FROM Me WHERE id=$user_id";
+$result = $conn->query($sql);
+$info = $result->fetch_assoc();
+
+
+// Get projects info
 $sql = "SELECT * FROM Projects WHERE user_id=$user_id";
 $result = $conn->query($sql);
-// $result = $conn->prepare($sql);
-// $result->execute(array(1));
 $tabProjects = [];
-
-foreach ($result as $row) {
+while ($row = $result->fetch_assoc()){
     array_push($tabProjects, $row);
 }
 
-$sql = "SELECT COUNT(*) FROM Me";
+
+// Get number of user in db
+
+$sql = "SELECT COUNT(*) AS nbuser FROM Me";
 $result = $conn->query($sql);
-$numberOfUser = 0;
-foreach ($result as $row) {
-    $numberOfUser = $row;
-}
-$numberOfUser = $numberOfUser[0];
+$numberOfUser = $result->fetch_assoc();
+$numberOfUser = $numberOfUser["nbuser"];
+
+
 ?>
 
 
