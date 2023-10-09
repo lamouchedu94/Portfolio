@@ -59,6 +59,7 @@ $numberOfUser = $numberOfUser["nbuser"];
 </head>
 
 <body>
+    <main>
     <header>
             <!-- <div>
                 <img class="pp" src="/img/kisspng-the-legend-of-zelda-the-minish-cap-the-legend-of-zelda-link-png-file-5a79869f03d344.7265453615179137590157.png" width="200" height="200">
@@ -79,4 +80,4 @@ $numberOfUser = $numberOfUser["nbuser"];
             </nav>
             
 
-        </header>
+    </header>

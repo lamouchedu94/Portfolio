@@ -10,4 +10,6 @@
                 </div>
 
             </div>
-        </footer>
+</footer>
+</main>
+</body>
